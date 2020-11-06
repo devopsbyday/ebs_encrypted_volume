@@ -1,0 +1,18 @@
+{
+  "Version": "1.0",
+  "Parameters": {
+    "RuleName": "ebs_encrypted_volume",
+    "Description": "ebs_encrypted_volume",
+    "SourceRuntime": "python3.7",
+    "CodeKey": "ebs_encrypted_volume.zip",
+    "InputParameters": "{}",
+    "OptionalParameters": "{\"VolumeExceptionList\": \"\", \"SubnetExceptionList\": \"\"}",
+    "SourceEvents": "AWS::EC2::Volume",
+    "RuleSets": [
+      "rulecriticity:high",
+      "pci",
+      "pci:3.4"
+    ]
+  },
+  "Tags": "[]"
+}
